@@ -1,0 +1,38 @@
+body {
+    background-color: #36454F;
+    color: #F5F5F5;
+    font-family: 'Bitter', serif;
+}
+
+.no-select {
+    user-select: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.left {
+    display: grid;
+    justify-items: center;
+    margin-top: 200px;
+}
+
+.heading {
+    letter-spacing: 0.4rem;
+    font-size: 1.5rem;
+    line-height: 10px;
+}
+
+.shpeel {
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+}
+
+.img {
+    pointer-events: none;
+    height: 150px;
+    border-radius: 100%;
+    /* box-shadow: 0px 0px 10px #241A11; */
+}
