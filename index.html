@@ -14,22 +14,30 @@
 <body>
     <div class="no-select container">
         <div class="left">
-            <img class="img" src="img/aakash.png"></img>
+            <img class="img-ak" src="img/aakash.png"></img>
             <div class="heading">
                 AAKASH KULKARNI
             </div>
             <div class="shpeel">
-                B.S. in Computer Science + Mathematics @ University of Utah
+                B.S., Computer Science and Mathematics
                 <div class="br"></div>
                 <span style="font-weight: 700;">Expected Graduation:</span> December 2024
+                <div class="br"></div>
+                <div class="uni">
+                    <img class="img-uni" src="img/u_red.png"></img>
+                    University of Utah
+                </div>
+                
+                
+                
             </div>
         </div>
         <div class="right">
-            <div>
-                <button class="btn" onclick="openTab('experience')">Experience</button>
-                <button class="btn" onclick="openTab('research')">Research</button>
-                <button class="btn" onclick="openTab('projects')">Projects</button>
-                <button class="btn" onclick="openTab('cool')">Cool Stuff</button>
+            <div class="btn-container">
+                <button id="exp" class="btn" onclick="openTab('experience', 'exp')">Experience</button>
+                <button id="re" class="btn" onclick="openTab('research', 're')">Research</button>
+                <button id="pr" class="btn" onclick="openTab('projects', 'pr')">Projects</button>
+                <button id="co" class="btn" onclick="openTab('cool', 'co')">Cool Stuff</button>
             </div>
             <div id="experience" class="tab-item">
                 <div class="title">
