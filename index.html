@@ -15,7 +15,9 @@
 <body>
     <div class="no-select container">
         <div class="left">
-            <img class="img-ak" src="img/aakash.png"></img>
+            <div class="img-ak-div">
+                <img class="img-ak" src="img/aakash.png"></img>
+            </div>
             <div class="heading">
                 AAKASH KULKARNI
             </div>
@@ -34,15 +36,25 @@
                     <a href="https://github.com/aakashkulkarni" target="_blank"><i class="fa-brands fa-square-github"></i></a>
                     <a href="https://twitter.com/aakash_kul" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
                 </div>
-                
-                
             </div>
         </div>
         <div class="right">
+            <div class="hamburger-menu">
+                <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+                <div id="hidden-nav">
+                    <button id="ab1" class="btn2 active1" onclick="openTab2('about', 'ab1')">About</button>
+                    <button id="exp1" class="btn2" onclick="openTab2('experience', 'exp1')">Experience</button>
+                    <button id="re1" class="btn2" onclick="openTab2('research', 're1')">Interests</button>
+                    <button id="pr1" class="btn2" onclick="openTab2('projects', 'pr1')">Projects</button>
+                    <button id="co1" class="btn2" onclick="openTab2('cool', 'co1')">Misc</button>
+                </div>
+            </div>
             <div class="btn-container">
                 <button id="ab" class="btn active" onclick="openTab('about', 'ab')">About</button>
                 <button id="exp" class="btn" onclick="openTab('experience', 'exp')">Experience</button>
-                <button id="re" class="btn" onclick="openTab('research', 're')">Research</button>
+                <button id="re" class="btn" onclick="openTab('research', 're')">Interests</button>
                 <button id="pr" class="btn" onclick="openTab('projects', 'pr')">Projects</button>
                 <button id="co" class="btn" onclick="openTab('cool', 'co')">Misc</button>
             </div>
@@ -106,7 +118,5 @@
             </div>
         </div>
     </div>
-    <footer>
-    </footer>
 </body>
 </html>
