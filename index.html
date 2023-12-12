@@ -1,122 +1,78 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Aakash</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src="https://kit.fontawesome.com/be6fc3c884.js" crossorigin="anonymous"></script>
-    <script src='main.js'></script>
-</head>
-<body>
-    <div class="no-select container">
-        <div class="left">
-            <div class="img-ak-div">
-                <img class="img-ak" src="img/aakash.png"></img>
-            </div>
-            <div class="heading">
-                AAKASH KULKARNI
-            </div>
-            <div class="shpeel">
-                B.S., Computer Science and Mathematics
-                <div class="br-5"></div>
-                <span style="font-weight: 700;">Expected Graduation:</span> December 2024
-                <div class="br-5"></div>
-                <div class="uni">
-                    <img class="img-uni" src="img/u_red.png"></img>
-                    University of Utah
-                </div>
-                <div class="icons">
-                    <!-- <a href="mailto:aakash.utah@gmail.com"><i class="fa-solid fa-envelope"></i></a> -->
-                    <a href="https://www.linkedin.com/in/aakashkul/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/aakashkulkarni" target="_blank"><i class="fa-brands fa-square-github"></i></a>
-                    <a href="https://twitter.com/aakash_kul" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
-                </div>
-            </div>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="maintained-by" content="Aakash Kulkarni">
+    <meta name="author" content="Aakash Kulkarni">
+    <meta name="keywords" content="Aakash Kulkarni">
+
+    <!-- Favicon -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="assets/styles.css" rel="stylesheet">
+
+    <title>Aakash Kulkarni</title>
+  </head>
+
+  <body>
+    <div class="container mt-5 mb-5">
+      <div class="row">
+        <div class="col">
+          <h2>Aakash Kulkarni</h2>
+          <hr>
         </div>
-        <div class="right">
-            <div class="hamburger-menu">
-                <a href="javascript:void(0);" class="icon" onclick="hamburger()">
-                    <i class="fa-solid fa-bars"></i>
-                </a>
-                <div id="hidden-nav">
-                    <button id="ab1" class="btn2 active1" onclick="openTab2('about', 'ab1')">About</button>
-                    <button id="exp1" class="btn2" onclick="openTab2('experience', 'exp1')">Experience</button>
-                    <button id="re1" class="btn2" onclick="openTab2('research', 're1')">Interests</button>
-                    <button id="pr1" class="btn2" onclick="openTab2('projects', 'pr1')">Projects</button>
-                    <button id="co1" class="btn2" onclick="openTab2('cool', 'co1')">Misc</button>
-                </div>
-            </div>
-            <div class="btn-container">
-                <button id="ab" class="btn active" onclick="openTab('about', 'ab')">About</button>
-                <button id="exp" class="btn" onclick="openTab('experience', 'exp')">Experience</button>
-                <button id="re" class="btn" onclick="openTab('research', 're')">Interests</button>
-                <button id="pr" class="btn" onclick="openTab('projects', 'pr')">Projects</button>
-                <button id="co" class="btn" onclick="openTab('cool', 'co')">Misc</button>
-            </div>
-            <div id="about" class="tab-item">
-                <div class="title">
-                    About Me
-                </div>
-                <div class="body">
-                    I'm a student seeking internships and research opportunities at the intersection of computer science, mathematics, finance,
-                    and strategy.
-                    <div class="br-20"></div>
-                    My goal as a student is to build my skills and work on meaningful projects and research. I want to
-                    write a thesis for my bachelor's degree to build my research portfolio. For that reason, I'm currently
-                    looking to explore topics and research areas that interest me.
-                    <div class="br-20"></div>
-                    Most recently, I was a Software Engineering Intern at Blyncsy, a local startup that uses machine learning and artifical intelligence
-                    to improve traffic and transportation systems. I was also a Data Science intern at the Sorenson Impact 
-                    Center where I helped the data science team achieve their vision of a cloud-centric data infrastructure.
-                    
-                </div> 
-            </div>
-            <div id="experience" class="tab-item"  style="display:none">
-                <div class="title">
-                    Experience
-                </div>
-            </div>
-            <div id="research" class="tab-item" style="display:none">
-                <div class="title">
-                    Research Interests
-                </div>
-                <div class="body">
-                    These are the topics that I would love to gain exposure to with research:
-                    <ul>
-                        <li>Scalable Algorithms</li>
-                        <li>Distributed Systems</li>
-                        <li>Algorithmic Trading</li>
-                        <li>Data Structures</li>
-                        <li>Machine Learning</li>
-                        <li>Deep Learning</li>
-                        <li>Computational Mathematics</li>
-                        <li>Computational Finance</li>
-                        <li>Networking</li>
-                        <li>Parallel Computing</li>
-                    </ul>
-                </div>
-            </div>
-              
-            <div id="projects" class="tab-item" style="display:none">
-                <div class="title">
-                    Projects
-                </div>
-                <div class="body">
-                    I've worked on several projects to learn and enhance my technical skills.
-                </div>
-            </div>
-              
-            <div id="cool" class="tab-item" style="display:none">
-                <div class="title">
-                    Other Cool Stuff
-                </div>
-            </div>
+      </div>
+      <div class="row pt-md-5">
+        <div class="col-md-2 mb-2">
+          <nav class="nav flex-column nav-pills">
+            <a class="nav-item nav-link active" href="./index.html">Home</a>
+            <!-- <a class="nav-item nav-link" href="./misc.html">Misc</a> -->
+          </nav>
         </div>
+
+        <div class="col-md-8">
+          <main class="shadow p-3 mb-5 bg-white rounded" style="padding:10px">
+            <div id="infolist">
+              <ul>
+                <li>
+                  I am currently an undergraduate student at the 
+                  <a href="https://utah.edu">University of Utah</a>. I'm also currently
+                  a Software Engineer on the Platform team at <a href="https://clozd.com">Clozd</a>,
+                  a win-loss consulting firm. Prior to that, I was an Undergraduate Researcher in the
+                  <a href="https://ctop.cs.utah.edu/">Compiler Performance Optimization</a> lab focusing 
+                  on high-performance machine learning compilers.
+                </li>
+                <li>
+                  <strong>Expected Gradution:</strong> December 2024
+                </li>
+                <li>
+                  <strong>Interests:</strong> Deep Learning, Big Data Systems, Scalable Computing, High-Frequency Trading Systems
+                </li>
+                <li>
+                  <strong>Email:</strong>
+                  <span style="font-family:monospace;">aakash.utah@gmail.com</span>
+                </li>
+
+                <li>
+                  <a style="text-decoration:none;" href="https://linkedin.com/in/aakashkul">
+                    <i class="svg-icon linkedin"></i>
+                  </a>
+                  <a style="text-decoration:none;" href="https://github.com/aakashkulkarni">
+                    <i class="svg-icon github"></i>
+                  </a>
+                  <a style="text-decoration:none;" href="https://twitter.com/aakash_kul">
+                    <i class="svg-icon twitter"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+          </main>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
